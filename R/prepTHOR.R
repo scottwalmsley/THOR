@@ -1,3 +1,11 @@
+#' rotateTHOR Rotates data matrix to MA style plot analysis.
+#'
+#' @param mat Matrix of spectral counts.
+#'
+#' @return A matrix of reotated datapoints.
+#' @export
+#'
+#' @examples
 rotateTHOR = function (mat){
 	
 	mdata = cbind(mat$IDX,mat$x,mat$y);

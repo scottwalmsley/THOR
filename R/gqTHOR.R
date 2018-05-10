@@ -1,6 +1,22 @@
-require("lmtest")
+
+#' gq.THOR
+#' Runs the Goldfeld-QUandt test for heteroskedasticity in a sliding window test.
+#'
+#' @param THOR.data 
+#' @param point 
+#' @param fraction 
+#' @param STEP 
+#' @param alpha 
+#' @param PLOT 
+#'
+#' @return
+#' @export
+#'
+#' @examples
 gq.THOR = function (THOR.data, point = 0.5, fraction = 0.375,STEP = 1,alpha=0.05,PLOT=T){
-   nam = array();
+   
+  require("lmtest")
+  nam = array();
    RVAL = list();
    if(PLOT==T){
          pdf(file="M_THOR.pdf",onefile=TRUE,width=8,height=3)  
@@ -14,7 +30,7 @@ gq.THOR = function (THOR.data, point = 0.5, fraction = 0.375,STEP = 1,alpha=0.05
 
       r.M = THOR.data$r.M[[N]];
       M = THOR.data$M[[N]];
-	M
+	    M
 
       n = dim(r.M)[1];
       nr = n - (n %% STEP); 

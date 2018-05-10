@@ -1,0 +1,10 @@
+Package: THOR
+Title: Determines a spectral count threshold cutoff.
+Version: 0.1.0
+Author: Scott Walmsley
+Maintainer: The package maintainer <scott@metabosoft.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: Apache 2.0
+Encoding: UTF-8
+LazyData: true
